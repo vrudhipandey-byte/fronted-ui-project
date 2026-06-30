@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB APPLICATION </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="title">
+        <h1>Tata Parikshan Careers</h1>
+        <P>Web Development Internship Portal</P>
+
+    </header>
+
+     <div class="page-wrapper">
+            <div class ="form-container">
+                <h2>JOB APPLICATION FORM</h2>
+                <P  class="form-subtext"> fill your details below to apply</P>
+                <form id="applicationForm" novalidate>
+
+                     <div class="input-box">
+
+   <i class="fa-solid fa-user"></i>
+
+             <input type="text" id="fullname" placeholder="Enter your full name"></div>
+              <div class="error" id="err-fullname" ></div>
+
+                      <div class="input-box">
+                      <i class="fa-solid fa-envelope"></i>
+                      <input type="text  id="email" placeholder="xyz@gmail.com"></div>
+                       <div class="error-text" id="err-email"></div>
+
+                          <div class="input-box">
+                       <i class="fa-solid fa-phone"></i>
+                  <input type="text" id="phone" placeholder="10-digit mobile number" maxlength="10"></div>
+
+                            <label for="position">POSITION APLLYING FOR</label>
+                            <select id="position">
+                           <option value="">-- Select Position --</option>
+                           <option value="Web Development" selected>Web Development</option>
+                          <option value="App Development">App Development</option>
+                           <option value="Data Analysis">Data Analysis</option>
+                          </select>
+                          <div class="error-text" id="err-position"></div>
+
+                           <label for="resume">Upload Resume (PDF/DOC, max 2MB)</label>
+                          <input type="file" id="resume" accept=".pdf,.doc,.docx">
+                          <div class="file-note" id="fileNote">No file selected</div>
+                           <div class="error-text" id="err-resume"></div>
+
+                            <button type="submit" id="submitBtn" disabled>Submit Application</button>
+
+                             <div class="success-msg" id="successMsg">
+                             Application submitted successfully!
+                           </div>
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+    
+        
+    <script src="script.js"></script>
+</body>
+</html>
